@@ -10,6 +10,15 @@ namespace MineKm
     {
         static void Main(string[] args)
         {
+            int numOfKm;
+            int numOfMeters;
+
+            Console.WriteLine("Input the distance in kilometers: ");
+            numOfKm = Convert.ToInt32 (Console.ReadLine());
+            numOfMeters = numOfKm * 1000;
+            Console.WriteLine("The distance in meters: " + numOfMeters);
+            Console.ReadKey();
+
         }
     }
 }

@@ -1,1 +1,6 @@
 D:\stud\stud\MineKm\bin\Debug\MineKm.exe.config
+D:\stud\stud\MineKm\bin\Debug\MineKm.exe
+D:\stud\stud\MineKm\bin\Debug\MineKm.pdb
+D:\stud\stud\MineKm\obj\Debug\MineKm.csprojResolveAssemblyReference.cache
+D:\stud\stud\MineKm\obj\Debug\MineKm.exe
+D:\stud\stud\MineKm\obj\Debug\MineKm.pdb
