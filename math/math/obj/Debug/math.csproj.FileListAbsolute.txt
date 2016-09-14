@@ -1,0 +1,6 @@
+E:\DEV\math\math\bin\Debug\math.exe.config
+E:\DEV\math\math\obj\Debug\math.csprojResolveAssemblyReference.cache
+E:\DEV\math\math\bin\Debug\math.exe
+E:\DEV\math\math\bin\Debug\math.pdb
+E:\DEV\math\math\obj\Debug\math.exe
+E:\DEV\math\math\obj\Debug\math.pdb
