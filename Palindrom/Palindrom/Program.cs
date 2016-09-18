@@ -10,27 +10,62 @@ namespace Palindrom
     {
         static void Main(string[] args)
         {
-            string word;
-            int i=0;
-            
-            Console.WriteLine("Please,enter the word:");
-            word = Console.ReadLine();
-            
-            if (word[i] == word[word.Length - i-1] && word[i+1] == word[word.Length - i -2])
-                {
-                for (i = 0; i < word.Length; i++)
-                {
-                    Console.WriteLine(word[word.Length - i - 1]);
-                }
-                Console.WriteLine("Entered word is palindrom");
-                }
-          
-            else
-             {
-                 Console.WriteLine("The enterde word isn't a palindrom");
-             }
+            string test_array;
+            Console.WriteLine("Please, enter a testing word or sentense.");
+            test_array = Console.ReadLine();
 
-            Console.ReadKey();
+            if (isPalindrome(test_array) == true)
+            {
+                Console.WriteLine("The testing text\n '{0}'\n is palindrome", test_array);
+            }
+            else
+            {
+                Console.WriteLine("The testing text\n '{0}'\n isn't palindrome", test_array);
+            }
+
+         }
+
+        public static bool isPalindrome(string test_array)
+        {
+            int min = 0;
+            int max = test_array.Length - 1;
+
+            while (true)
+            {
+                if (min > max)
+                {
+                    return true;
+                }
+                char a = test_array[min];
+                char b = test_array[max];
+
+                while (!char.IsLetterOrDigit(a))
+                {
+                    min++;
+                    if (min > max)
+                    {
+                        return true;
+                    }
+                    a = test_array[min];
+                }
+
+                while (!char.IsLetterOrDigit(b))
+                {
+                    max--;
+                    if (min > max)
+                    {
+                        return true;
+                    }
+                    b = test_array[max];
+                }
+                if (char.ToLower(a) != char.ToLower(b))
+                {
+                   return false;
+                }
+                min++;
+                max--;
+            }
         }
     }
 }
+    
