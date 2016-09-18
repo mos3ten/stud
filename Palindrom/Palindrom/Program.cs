@@ -22,6 +22,7 @@ namespace Palindrom
             {
                 Console.WriteLine("The testing text\n '{0}'\n isn't palindrome", test_array);
             }
+            Console.ReadKey();
 
          }
 
