@@ -16,7 +16,7 @@ namespace Palindrom
             Console.WriteLine("Please,enter the word:");
             word = Console.ReadLine();
             
-            if (word[i] == word[word.Length - i-1])
+            if (word[i] == word[word.Length - i-1] && word[i+1] == word[word.Length - i -2])
                 {
                 for (i = 0; i < word.Length; i++)
                 {
