@@ -38,10 +38,7 @@ namespace Matrix_Sum
                 for(int j=0; j<matrix_Size;j++)
                 {
                     Console.Write("{0}\t", matrix[i,j]);
-                    if (i < matrix_Size && j<matrix_Size)
-                    {
-                        sum_main += matrix[i,j];
-                    }
+                    sum_main += matrix[i,j];
                     i++;
                 }
             }
@@ -53,19 +50,13 @@ namespace Matrix_Sum
                 for (int j = 0; j <matrix_Size; j++)
                 {
                     Console.Write("{0}\t",matrix[i,j]);
-                    if (i < matrix_Size && j < matrix_Size)
-                    {
-                        sum_side += matrix[i, j];
-                    }
+                    sum_side += matrix[i, j];
                     i--;
                 }
             }
             Console.WriteLine();
             Console.WriteLine("Side diagonal summary:{0}", sum_side);
-
             Console.ReadKey();
-
-
         }
     }
 }

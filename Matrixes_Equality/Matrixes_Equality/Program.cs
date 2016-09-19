@@ -23,10 +23,7 @@ namespace Matrixes_Equality
 
             matrix_1 = new int [matrix_Size,matrix_Size];
             matrix_2 = new int[matrix_Size, matrix_Size];
-          
-           
-            
-
+                  
             for (int i = 0; i < matrix_Size; i++)
             {
                 for (int j = 0; j < matrix_Size; j++)
@@ -53,7 +50,7 @@ namespace Matrixes_Equality
                        {
                            for (int j = 0; j < matrix_Size; j++)
                            {
-                             if (matrix_1[i, j] == matrix_2[i, j] && i < matrix_Size && j < matrix_Size)
+                             if (matrix_1[i, j] == matrix_2[i, j])
                                 {
                                  counter = counter+1;
                                 }
@@ -62,8 +59,6 @@ namespace Matrixes_Equality
             equality = (counter/Convert.ToDecimal(matrix_1.Length))*100;
             Console.WriteLine("Equality {0}%", equality);
             Console.ReadKey();
-
         }
-
     }
 }
