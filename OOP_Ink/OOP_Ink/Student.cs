@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +10,7 @@ namespace OOP_Ink
     {
         private string pib;
         private string adress;
-        private Double[] marks;
+        private Collection <double> marks;
         private double avg_mark;
 
         public string PIB
@@ -24,30 +24,24 @@ namespace OOP_Ink
             set { adress = Console.ReadLine(); }
         }
 
-        public double Marks
+        public Collection<double> Marks
         {
             get
-            {
-                for (int i = 0; i < marks.Length; i++)
                 {
-                    return marks[i];
+                    return marks;
                 }
-            }
             set
             {
-                for (int i = 0; i < marks.Length; i++)
-                {
-                    marks[i]= double.Parse(Console.ReadLine());
-                }
+                marks = value;
             }
         }
         
 
-        public Student(string PIB = "Unknown",string Adress = "Unknown", double Marks = 0d)
+        public Student(string PIB = "Unknown",string Adress = "Unknown", double[] marks = 0d)
         {
             PIB = pib;
             Adress = adress;
-            Marks = marks;
+            Marks = new Collection<double>(marks);
 
         }
 
